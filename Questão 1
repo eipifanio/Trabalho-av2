@@ -1,0 +1,5 @@
+B=float(input('Base maior:'))
+b=float(input('base menor'))
+h=float(input('Altura'))
+A = ((B+b)*h)/2
+print('A área do trapézio é igual a {:.1f}M²'.format(A))
