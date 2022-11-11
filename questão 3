@@ -1,0 +1,22 @@
+def sai():
+    if H > 12:
+        print('{}:{}PM'.format(P, M))
+    elif H == 12:
+        print('{}:{}PM'.format(P+12, M))
+    elif H == 0:
+        print('{}:{}AM'.format(A+12,M))
+    elif H<0:
+        print('fim')
+    else:
+        print('0{}:{}AM'.format(A, M))
+H = int(input('digite a hora: '))
+M = int(input('digite o minuto: '))
+P=H - 12
+A=H
+sai()
+while H>=0:
+    H = int(input('digite a hora: '))
+    M = int(input('digite o minuto: '))
+    P=H - 12
+    A=H
+    sai()
